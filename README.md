@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/manudeli/sementic-release-github-actions/actions/workflows/publish.yml/badge.svg?branch=master)](https://github.com/manudeli/sementic-release-github-actions/actions/workflows/publish.yml)
+
 # TSDX React w/ Storybook User Guide
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
