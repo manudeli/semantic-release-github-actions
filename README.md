@@ -1,4 +1,4 @@
-[![Node.js CI](https://github.com/manudeli/sementic-release-github-actions/actions/workflows/publish.yml/badge.svg?branch=master)](https://github.com/manudeli/sementic-release-github-actions/actions/workflows/publish.yml)
+[![Node.js CI](https://github.com/manudeli/semantic-release-github-actions/actions/workflows/publish.yml/badge.svg?branch=master)](https://github.com/manudeli/semantic-release-github-actions/actions/workflows/publish.yml)
 
 # TSDX React w/ Storybook User Guide
 
