@@ -39,7 +39,7 @@
     "trailingComma": "es5"
   },
   "name": "semantic-release-github-actions",
-  "author": "마누",
+  "author": "manudeli",
   "module": "dist/semantic-release-github-actions.esm.js",
   "size-limit": [
     {
