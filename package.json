@@ -22,7 +22,7 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "semantic-release": "semantic-release --branches master"
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "react": ">=16"
