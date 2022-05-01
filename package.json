@@ -16,13 +16,13 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "acp": "git add . && yarn commit && git push",
-    "commit":"git-cz",
+    "commit": "git-cz",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --branches master"
   },
   "peerDependencies": {
     "react": ">=16"
