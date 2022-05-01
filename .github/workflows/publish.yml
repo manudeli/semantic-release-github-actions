@@ -26,6 +26,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
     - run: yarn install --frozen-lockfile
     - run: yarn test
 
@@ -39,6 +40,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+        persist-credentials: false
     - run: yarn install --frozen-lockfile
     - run: yarn semantic-release
       env:
