@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
     branches: [ '*' ]
 
@@ -16,8 +16,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x]
-        os: [ubuntu-latest, windows-latest]
+        node-version: [16.x]
+        os: [ubuntu-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -32,7 +32,7 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/master' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     needs: [ quality ]
     steps:
     - uses: actions/checkout@v3
