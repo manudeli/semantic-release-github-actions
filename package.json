@@ -1,8 +1,41 @@
 {
+  "name": "semantic-release-github-actions",
+  "author": "manudeli",
   "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manudeli/semantic-release-github-actions"
+  },
+  "module": "dist/semantic-release-github-actions.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/semantic-release-github-actions.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/semantic-release-github-actions.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "files": [
     "dist",
     "src"
@@ -22,35 +55,11 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "semantic-release": "semantic-release --branches master"
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "react": ">=16"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "name": "semantic-release-github-actions",
-  "author": "manudeli",
-  "module": "dist/semantic-release-github-actions.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/semantic-release-github-actions.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/semantic-release-github-actions.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@size-limit/preset-small-lib": "^7.0.8",
@@ -72,14 +81,5 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/manudeli/semantic-release-github-actions.git"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
