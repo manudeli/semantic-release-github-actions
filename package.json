@@ -1,6 +1,8 @@
 {
   "name": "semantic-release-github-actions",
-  "author": "manudeli",
+  "author": "Jonghyeon Ko <flowithusdev@gmail.com>",
+  "module": "dist/semantic-release-github-actions.esm.js",
+  "repository": "https://github.com/manudeli/semantic-release-github-actions.git",
   "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
@@ -35,11 +37,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/manudeli/semantic-release-github-actions"
-  },
-  "module": "dist/semantic-release-github-actions.esm.js",
   "size-limit": [
     {
       "path": "dist/semantic-release-github-actions.cjs.production.min.js",
